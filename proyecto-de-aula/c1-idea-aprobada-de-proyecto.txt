@@ -1,0 +1,19 @@
+INTRODUCCIÓN
+Este proyecto consiste en un ecualizador paramétrico de cinco bandas, con filtros activos de frecuencia, resonancia y ganancia variable. Está pensado para un equipo de sonido bluetooth, con control remoto de las bandas vía app móvil.
+
+¿QUÉ ES UN EQ PARAMÉTRICO?
+Es un dispositivo que involucra varios filtros activos para el mismo sistema de audio. Cada filtro tiene la particularidad de alterar el balance de frecuencias de una señal de manera personalizada, modificando la ganancia y resonancia en frecuencias establecidas por los controles de los filtros. Los efectos de cada filtro se suman o se restan para ajustar con precisión las frecuencias deseadas. Este sistema es generalmente usado en producción de sonido.
+
+ASPECTOS CLAVE
+- 5 bandas:
+    Banda 1: Filtro pasa altos con ajuste de frecuencia.
+    Bandas 2, 3 y 4: Filtros tipo Peak-Notch con ajuste de frecuencia, ganancia y resonancia (Q).
+    Banda 5: Filtro pasa bajos con ajuste de frecuencia.
+- Sistema híbrido analógico-digital:
+    Perillas físicas: Se usarán encoders rotatorios en lugar de potenciómetros tradicionales.
+    Amplificadores: LM13700 controlados por voltaje para modificar la ganancia, frecuencia y resonancia en los filtros.
+    Se controlarán estos parámetros mediante señales analógicas generadas por la ESP32 a través del DAC MCP4725.
+- Control remoto mediante app:
+    Tendrá una interfaz gráfica intuitiva para controlar cada parámetro de manera intuitiva.
+    Conexión por Bluetooth.
+    Solo funcionará en Android.
